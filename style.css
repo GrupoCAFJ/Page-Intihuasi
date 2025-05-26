@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+
+/* - - - - - - - - - HEADER - - - - - - - - - */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    align-content: center;
+    font-size: 4.5em;
+    color: #ffffff;
+
+    
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgb(112, 156, 98)), url(imagenes/bosque\ fondo\ 2.jpg);
+    backdrop-filter: blur(10px);
+    background-size: cover;
+}
+
+.button-header {
+    border: 1px solid #f1f1f1;
+    border-radius: 13px;
+    background-color: #f1f1f1;
+    width: 9em;
+    height: 3em;
+}
+
+.button-header a {
+    text-decoration: none;
+    color: #111;
+    font-size: 1em;
+}
+
+.button-header:hover {
+    font-size: .2em;
+    box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.655);
+}
+/* - - - - - - - - - BODY - - - - - - - - - */
+.ola {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #f1f1f1f1;
+    margin: 0;
+    padding: 0;
+
+    width: 100%;
+    height: max-content;
+}
+
+/*OLA*/
+.ola2 {
+    margin: 0;
+    padding: 0;
+}
+.ola3 {
+    margin-top: -5px;
+    padding: 0;
+}
+.conteiner-imagenes {
+    width: auto;
+    height: 50vh;
+
+    margin: 20px 0 50px 0;
+
+    text-align: center;
+    align-content: center;
+
+}
+
+.conteiner-imagenes h2 {
+    font-size: 4vh;
+}
+
+.imagen {
+    width: 20em;
+    height: 27em;
+
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.655);
+    border-radius: 20px;
+    margin: 0 10px;
+
+    display: inline-block;
+}
+
+
+
+.conteiner-sobre-nosotros{
+    width: 100%;
+    height: 50vh;
+    background-color: #b6b6b6;
+}
+
+.conteiner-sobre-nosotros h2 {
+    text-align: center;
+    font-size: 5em;
+}
+
+
+/*footer*/
+footer {
+    height: 30vh;
+    width: 100%;
+
+    background-color: #878787;
+}
+
+
+

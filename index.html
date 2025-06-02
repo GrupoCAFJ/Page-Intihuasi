@@ -1,17 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Intihuasi</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Intihuasi</title>
 </head>
-<header>
-    <h1>Intihuasi</h1>
-    <p> "Casa del Sol"</p>
-    <button class="button-header"><a href="#conteiner-sobre-nosotros">Conocé más</a></button>
-</header>
+
 <body>
+
+  <!-- Pantalla de carga -->
+  <div class="pantalla-carga" id="pantallaCarga">
+    <div class="contenedor-sol">
+      <div class="sol" id="sol">
+        <div class="relleno" id="relleno"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contenido principal (se oculta al inicio) -->
+  <div class="contenido" id="contenidoPrincipal" style="display: none;">
+
+    <header>
+      <h1>Intihuasi</h1>
+      <p>"Casa del Sol"</p>
+      <button class="button-header"><a href="#conteiner-sobre-nosotros">Conocé más</a></button>
+    </header>
+
     <svg xmlns="http://www.w3.org/2000/svg" class="ola" viewBox="0 0 1440 320"><path fill="#709c62" fill-opacity="1" d="M0,288L48,266.7C96,245,192,203,288,202.7C384,203,480,245,576,261.3C672,277,768,267,864,256C960,245,1056,235,1152,213.3C1248,192,1344,160,1392,144L1440,128L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
 
 
@@ -36,12 +51,9 @@
             </div>
         </div>
     </aside>
+
+  <script src="script.js"></script>
 </body>
-
-<footer>
-
-</footer>
-
-
-<script src="script.js"></script>
 </html>
+
+

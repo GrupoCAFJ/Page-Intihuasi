@@ -2,57 +2,57 @@
 /* - - - - - - - - - Pantalla de carga  - - - - - - - - - */
 /* Animación de aparición suave */
 .fade-in {
-  opacity: 0;
-  animation: fadeIn 1.5s ease-in-out forwards;
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in-out forwards;
 }
 
 
 @keyframes fadeIn {
-  to {
-    opacity: 1;
-  }
+    to {
+        opacity: 1;
+    }
 }
 
 .pantalla-carga {
-  position: fixed;
-  z-index: 9999;
-  width: 100%;
-  height: 100vh;
-  background: linear-gradient(to top, #d6c068, #e07c2a, #d6ad24);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: opacity 1s ease-out;
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to top, #d6c068, #e07c2a, #d6ad24);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 1s ease-out;
 }
 
 .contenedor-sol {
-  position: relative;
-  width: 300px;
-  height: 400px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    position: relative;
+    width: 300px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .sol {
-  position: absolute;
-  width: 100px;
-  height: 100px;
-  bottom: 120px;
-  border-radius: 50%;
-  background: radial-gradient(circle at center, #ffeb3b 0%, #fdd835 60%, #fbc02d 100%);
-  overflow: hidden;
-  box-shadow: 0 0 30px 10px #ffeb3b;
-  transition: all 2s ease-in-out;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    bottom: 120px;
+    border-radius: 50%;
+    background: radial-gradient(circle at center, #ffeb3b 0%, #fdd835 60%, #fbc02d 100%);
+    overflow: hidden;
+    box-shadow: 0 0 30px 10px #ffeb3b;
+    transition: all 2s ease-in-out;
 }
 
 .relleno {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 0%;
-  background: linear-gradient(to top, #fffde7, #fff176, #ffeb3b);
-  transition: height 0.2s ease-in;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(to top, #fffde7, #fff176, #ffeb3b);
+    transition: height 0.2s ease-in;
 }
 
     
@@ -117,10 +117,12 @@ body {
     margin: 0;
     padding: 0;
 }
+
 .ola3 {
     margin-top: -10px;
     padding: 0;
 }
+
 .conteiner-imagenes {
     width: auto;
     height: max-content;
@@ -181,36 +183,106 @@ body {
     width: 100%;
     height: 150vh;
     background-color: #f1f1f1;
+    
 }
 
 .conteiner-sobre-nosotros h2 {
     text-align: center;
     font-size: 5em;
+    
 }
 
 /*IMAGENES*/
 .fila-1{
-    
     text-align: center;
     display: flex;
     justify-content:space-between;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 .img-1{
-    width: 30%;
+    width: 45%;
     height: 70vh;
     border: solid 1px black;
 }
 .text-1 {
-    width: 30%;
+    width: 45%;
     height: 70vh;
     border: solid 1px black;
 }
 
-/*footer*/
+/*FOOTER*/
 footer {
-    height: 30vh;
+    height: fit-content;
     width: 100%;
 
+    margin: 0%;
+    bottom: 0;
+
     background-color: #878787;
+    border-top-right-radius: 50px ;
+    border-top-left-radius:50px ;
+}
+
+/*FOOTER ALTO*/
+.footer-alto{
+    text-align: center;
+    align-content: center;
+}
+.footer-alto h1{
+    padding: 16px;
+}
+
+hr{
+    width: 27%;
+    margin: auto;
+    height: 3px;
+    color: #ffffff;
+    background-color: #ffffff;
+    border-radius: 10px
+}
+
+/*FOOTER BAJO*/
+.footer-bajo{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#footer-section{
+    width: 25vw;
+    height: fit-content;
+}
+
+footer iframe {
+    width: 20vw;
+    height: 40vh;
+
+    border-radius: 20px;
+    padding: 10px;
+
+    align-items: center;                                                                                                                                                                                                                                                                                                               
+}
+
+
+@media(max-width:700px){
+    header {
+        font-size: 4em;
+    }
+}
+@media(max-width:600px){
+    header {
+        font-size: 3.5em;
+    }
+}
+@media(max-width:500px){
+    header {
+        font-size: 3em;
+    }
+}
+@media(max-width:450px){
+    header {
+        font-size: 2.5em;
+    }
 }

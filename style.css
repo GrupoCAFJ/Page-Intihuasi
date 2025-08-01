@@ -1,4 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+:root {
+        --fondo-principal: #F5F3E7;
+        --fondo-secciones: #DCEFD8;
+        --texto-principal: #2F3E2F;
+        --titulos: #2E7D32;
+        --subtitulos: #6D4C41;
+        --boton-primario: #4CAF50;
+        --boton--primario: #388E3C;
+        --boton-secundario: #81D4FA;
+        --boton-hover-secundario:#4FC3F7 ;
+        --border-lineas: #BDBDBD;
+        --enlaces:#388E3C ;
+        --enlaces-hover:#1B5E20 ;
+        --fondo-footer: #4E342E ;
+        --texto-footer: #FAF3E0;
+        --sombra-sutil: rgba(0, 0, 0, 0.1) ;
+        --radius: 12px;
+}
+
 /* - - - - - - - - - Pantalla de carga  - - - - - - - - - */
 /* Animación de aparición suave */
 .fade-in {
@@ -68,36 +88,36 @@ header{
     height: 100vh;
 
     font-family: "Federo", sans-serif;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    text-shadow: 2px 2px 5px var(--sombra-sutil);
     text-align: center;
     align-content: center;
     font-size: 4.5em;
-    color: #ffffff;
+    color: var(--texto-principal);
 
     
-    background-image: linear-gradient(rgba(255, 255, 255, 0), rgb(112, 156, 98)), url(imagenes/bosque\ fondo\ 2.jpg);
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgb(112, 156, 98)), url(imagenes/cartel-intihuasi.jpeg);
     backdrop-filter: blur(10px);
-    background-size: cover;
+    background-size:cover;
+    background-position: 50%;
 }
 
 .button-header {
-    border: 1px solid #f1f1f1;
     border-radius: 13px;
-    background-color: #f1f1f1;
     width: 9em;
     height: 3em;
 }
 
 .button-header a {
     text-decoration: none;
-    color: #111;
-    font-size: 1em;
+    color: var(--texto-principal);
+    font-size: 1.3em;
 }
 
 .button-header:hover {
     transform: scale(1.1);
-    transition: .3s;
-    box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.655);
+    transition: .6s;
+    background-color: var(--boton-primario);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.655);
 }
 /* - - - - - - - - - BODY - - - - - - - - - */
 .ola {
@@ -197,19 +217,27 @@ body {
     text-align: center;
     display: flex;
     justify-content:space-between;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 15%;
+    margin-right: 15%;
 }
 
 .img-1{
-    width: 45%;
+    width: 40%;
     height: 70vh;
     border: solid 1px black;
 }
 .text-1 {
-    width: 45%;
-    height: 70vh;
+    width: 34%;
+    height: 60vh;
+    display: flex;
     border: solid 1px black;
+    padding-left:3%;
+    padding-right:3%;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
 }
 
 /*FOOTER*/
@@ -220,7 +248,8 @@ footer {
     margin: 0%;
     bottom: 0;
 
-    background-color: #878787;
+    background-color: var(--fondo-footer) ;
+    color: var(--texto-footer);
     border-top-right-radius: 50px ;
     border-top-left-radius:50px ;
 }
@@ -238,8 +267,8 @@ hr{
     width: 27%;
     margin: auto;
     height: 3px;
-    color: #ffffff;
-    background-color: #ffffff;
+    color: var(--texto-footer);
+    background-color: var(--texto-footer);
     border-radius: 10px
 }
 
@@ -248,11 +277,13 @@ hr{
     margin-top: 20px;
     display: flex;
     justify-content: space-between;
+    
 }
 
 #footer-section{
     width: 25vw;
     height: fit-content;
+    
 }
 
 footer iframe {
@@ -265,7 +296,26 @@ footer iframe {
     align-items: center;                                                                                                                                                                                                                                                                                                               
 }
 
-
+@media(max-width:1650px){/*text-1*/
+    .text-1{
+        font-size: 18px;
+    }
+}
+@media(max-width:1450px){/*text-1*/
+    .text-1{
+        font-size: 17px;
+    }
+}
+@media(max-width:1300px){/*text-1*/
+    .text-1{
+        font-size: 16px;
+    }
+}
+@media(max-width:1150px){/*text-1*/
+    .text-1{
+        font-size: 15px;
+    }
+}
 @media(max-width:700px){
     header {
         font-size: 4em;

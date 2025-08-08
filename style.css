@@ -92,10 +92,10 @@ header{
     text-align: center;
     align-content: center;
     font-size: 4.5em;
-    color: var(--texto-principal);
+    color: var(--texto-footer);
 
     
-    background-image: linear-gradient(rgba(255, 255, 255, 0), rgb(112, 156, 98)), url(imagenes/cartel-intihuasi.jpeg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.048), rgba(0, 0, 0, 0.685)), url(imagenes/cartel-intihuasi.jpeg);
     backdrop-filter: blur(10px);
     background-size:cover;
     background-position: 50%;
@@ -105,19 +105,28 @@ header{
     border-radius: 13px;
     width: 9em;
     height: 3em;
+    border: 0px;
+
+    background-color: #0000005d;
 }
 
 .button-header a {
     text-decoration: none;
-    color: var(--texto-principal);
+    color: var(--border-lineas);
     font-size: 1.3em;
 }
 
 .button-header:hover {
     transform: scale(1.1);
     transition: .6s;
-    background-color: var(--boton-primario);
+    background-color: #ffffff;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.655);
+}
+
+.button-header:hover a {
+    transform: scale(1.1);
+    transition: .2s;
+    color: #000000;
 }
 /* - - - - - - - - - BODY - - - - - - - - - */
 .ola {
@@ -125,43 +134,52 @@ header{
     padding: 0;
 }
 body {
-    background-color: #f1f1f1f1;
+    background-color: #f1f1f1 ;
     margin: 0;
     padding: 0;
-
+    
     width: 100%;
 }
 
-/*OLA*/
-.ola2 {
-    margin: 0;
-    padding: 0;
-}
 
-.ola3 {
-    margin-top: -10px;
-    padding: 0;
-}
+/*- - - - - - - - - - - - - CONTEINER PRESENTACION- - - - - - - - - - - - -*/
+
 
 .conteiner-imagenes {
     width: auto;
-    height: max-content;
+    min-height: 100vh;
+    height: fit-content;
 
-    margin: 20px 0 50px 0;
-
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 40px;
     text-align: center;
     align-content: center;
+    justify-content: center;
+
+    background-color: #d6d6d6;
+}
+
+.conteiner-imagenes hr{
+    width: 27%;
+    margin: auto;
+    height: 3px;
+    color: var(--texto-principal);
+    background-color: var(--texto-principal);
+    border-radius: 10px;
+    margin-top: 12px;
+    margin-bottom: 22px;
 }
 
 .conteiner-imagenes h2 {
-    font-size: 4vh;
+    font-size: 1.5em;
 }
 
-.imagen {
-    width: 20em;
+#imagen {
+    width: 23em;
     height: 27em;
 
-    background-image: linear-gradient(rgba(255, 255, 255, 0)), url(imagenes/img-body-1.webp);
+    
     backdrop-filter: blur(10px);
     background-size: cover;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.655);
@@ -170,77 +188,184 @@ body {
 
     display: inline-block;
 
-    gap: 5px;
+    gap: 10px;
 }
 
-.imagen p{
-    display: none;
-    position: fixed;
-    color: #ffffff;
+.imagen1 {
+    background-image: linear-gradient(rgba(255, 255, 255, 0)), url(imagenes/grupo-juvenil.jpeg);
+}
+.imagen2 {
+    background-image: linear-gradient(rgba(255, 255, 255, 0)), url(imagenes/mesa-cruz-2.jpeg);
+}
+.imagen3 {
+    background-image: linear-gradient(rgba(255, 255, 255, 0)), url(imagenes/arbol-plantado-hijas.jpeg);
+}
 
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #ffffff;
+#imagen:hover {
+    transform: scale(1.02);
+    transition: .6s;
+}
 
+.card {
+    display: inline-block;
 }
 
 
-.imagen:hover {
-    transform: scale(1.05);
-    transition: .2s;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.63)), url(imagenes/img-body-1.webp);
-    backdrop-filter: blur(10px);
-    background-size: cover;
-} 
 
-.imagen:hover p {
-    display: block;
-}
+
+/*- - - - - - - - - - - - - CONTEINER SOBRE NOSOTROS - - - - - - - - - - - - -*/
+
 
 
 .conteiner-sobre-nosotros{
     width: 100%;
-    height: 150vh;
+    min-height: min-content;
+    height: fit-content;
     background-color: #f1f1f1;
-    
+
+    padding-top: 50px;
+}
+
+.conteiner-sobre-nosotros hr{
+    width: 27%;
+    margin: auto;
+    height: 3px;
+    color: var(--texto-principal);
+    background-color: var(--texto-principal);
+    border-radius: 10px;
+    margin-top: 12px;
+    margin-bottom: 22px;
 }
 
 .conteiner-sobre-nosotros h2 {
     text-align: center;
-    font-size: 5em;
-    
+    font-size: 1.5em;
 }
 
-/*IMAGENES*/
-.fila-1{
-    text-align: center;
-    display: flex;
-    justify-content:space-between;
-    margin-left: 15%;
-    margin-right: 15%;
-}
-
-.img-1{
-    width: 40%;
-    height: 70vh;
-    border: solid 1px black;
-}
-.text-1 {
-    width: 34%;
-    height: 60vh;
-    display: flex;
-    border: solid 1px black;
-    padding-left:3%;
-    padding-right:3%;
-    padding-top: 5vh;
-    padding-bottom: 5vh;
-    font-size: 20px;
+.conteiner-sobre-nosotros p {
+    align-items: center;
     justify-content: center;
+    text-align: center;
+}
+
+.conteiner-sobre-nosotros .card {
+    width: 100%;
+
+    justify-items: center;
     align-items: center;
 }
 
-/*FOOTER*/
+.conteiner-sobre-nosotros .card-left {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    text-align: left;
+
+    gap: 50px;
+    width: 80vw;
+    margin: 40px;
+}
+
+.conteiner-sobre-nosotros .card-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: right;
+
+    gap: 50px;
+    width: 80vw;
+    margin: 40px;
+}
+
+.conteiner-sobre-nosotros .card-left p {
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+.conteiner-sobre-nosotros .card-right p {
+    align-items: center;
+    justify-content: center;
+    text-align: right;
+}
+
+#imagenMisa {
+    height: 25rem;
+    width: 40em;
+
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+
+/*- - - - - - - - - - - - - CONTEINER UBICACION - - - - - - - - - - - - -*/
+
+.conteiner-ubicacion{
+    width: 100%;
+    min-height: min-content;
+    height: fit-content;
+    background-color: #d8d8d8;
+    padding-top: 50px;
+}
+
+.conteiner-ubicacion hr{
+    width: 27%;
+    margin: auto;
+    height: 3px;
+    color: var(--texto-principal);
+    background-color: var(--texto-principal);
+    border-radius: 10px;
+    margin-top: 12px;
+    margin-bottom: 22px;
+}
+
+.conteiner-ubicacion h2 {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.conteiner-ubicacion p {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.conteiner-ubicacion .card {
+    width: 100%;
+
+    justify-items: center;
+    align-items: center;
+}
+
+.conteiner-ubicacion .card-mapa {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    text-align: left;
+
+    gap: 50px;
+    width: 80vw;
+    margin: 40px;
+}
+.conteiner-ubicacion .card-mapa p{
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+
+    width: 40%;
+}
+
+iframe {
+    width: 60%;
+    border-radius: 15px;
+}
+
+
+/*- - - - - - - - - - - - - FOOTER - - - - - - - - - - - - -*/
+
+
+
+
 footer {
     height: fit-content;
     width: 100%;
@@ -254,7 +379,6 @@ footer {
     border-top-left-radius:50px ;
 }
 
-/*FOOTER ALTO*/
 .footer-alto{
     text-align: center;
     align-content: center;
@@ -263,7 +387,7 @@ footer {
     padding: 16px;
 }
 
-hr{
+footer hr{
     width: 27%;
     margin: auto;
     height: 3px;
@@ -336,3 +460,4 @@ footer iframe {
         font-size: 2.5em;
     }
 }
+

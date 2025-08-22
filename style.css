@@ -205,7 +205,7 @@ body {
 }
 .imagen2 {
     background-image: linear-gradient(rgba(255, 255, 255, 0)), url(imagenes/mini-minumento.jpeg);
-    background-position: -120px;
+    background-position:center;
 
 }
 .imagen3 {
@@ -432,17 +432,6 @@ footer hr{
 }
 
 
-
-
-
-
-
-/*  - - - - - - - - -  - - seccion responsiva - - - - - - - - - - - - */
-
-
-
-
-
 /* ===================== RESPONSIVE DESIGN ===================== */
 
 /* General */
@@ -479,10 +468,8 @@ footer hr{
     header {
         font-size: 1.6em;
     }
-
     .button-header {
         width: 30%;
-
     }
 }
 @media (max-width: 300px) {
@@ -506,9 +493,12 @@ footer hr{
     #imagen {
         width: 20em;
         height: 24em;
+
     }
     .conteiner-imagenes p {
         font-size: 16px;
+        margin-left: 10px;
+        margin-right: 10px;
     }
     
 }
@@ -530,10 +520,52 @@ footer hr{
     }
     .conteiner-imagenes p {
         font-size: 14px;
+        margin-left: 30px;
+        margin-right: 30px;
     }
 }
+@media (max-width: 860px) {
+    #imagenPlaca,
+    #imagen {
+        width: 22em;
+        height: 26em;
+        margin-top: 2em;
+        margin-bottom: 1em;
+        margin-left: 5em;
+        margin-right: 5em;
+    }
+    .conteiner-imagenes p {
+        font-size: 15px;
+    }
+}
+@media (max-width: 650px) {
+    #imagenPlaca,
+    #imagen {
+        margin-left: 3em;
+        margin-right: 3em;
+    }
+}
+@media (max-width: 500px) {
+    #imagenPlaca,
+    #imagen {
+        width: 17em;
+        height: 20em;
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+}
+@media (max-width: 350px) {
+    #imagenPlaca,
+    #imagen {
+        width: 14em;
+        height: 17em;
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+}
+
 /* Sobre Nosotros */
-@media (max-width: 1024px) {
+@media (max-width: 1150px) {
     .conteiner-sobre-nosotros .card-left,
     .conteiner-sobre-nosotros .card-right {
         flex-direction: column;
@@ -551,7 +583,11 @@ footer hr{
         height: auto;
     }
 }
-
+@media (max-width: 1200px) {
+    .conteiner-sobre-nosotros p{
+        font-size: .9em;
+    }
+}
 /* Ubicación */
 @media (max-width: 1024px) {
     .conteiner-ubicacion .card-mapa {
@@ -572,7 +608,7 @@ footer hr{
 }
 
 /* Footer */
-@media (max-width: 768px) {
+@media (max-width: 1150px) {
     .card-redes {
         display: flex;
         gap: 0;
@@ -582,8 +618,8 @@ footer hr{
         font-size: 0.9em;
         text-align: center;
     }
-    .card-red,
-    .card-red {
+    .card-left,
+    .card-right {
         display: inline-block;
         gap: 50px;
         width: 40vw;
@@ -591,15 +627,19 @@ footer hr{
         align-items: center;
     }
 
-    .card-red p,
-    .card-red p {
+    .card-right p,
+    .card-left p {
         order: 2;
         font-size: .8em;
     }
 
-    .card-red img,
-    .card-red img {
+    .card-left img,
+    .card-right img {
         order: 1;
+    }
+
+    .card-redes {
+        gap: 10px;
     }
 
 }
